@@ -1,5 +1,10 @@
 const selector = (obj, keys) => {
-    // Ваше решение должно быть здесь
+        keys.forEach(key => {
+        if(obj[key]) obj = obj[key];
+        else obj = '';
+    })
+    return obj;
+
 };
 
 module.exports = selector;
